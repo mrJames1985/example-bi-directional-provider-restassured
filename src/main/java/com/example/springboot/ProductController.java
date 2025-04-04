@@ -22,12 +22,12 @@ class ProductController {
   ProductController(ProductRepository repository) {
     this.repository = repository;
   }
-
+/*
   @GetMapping("/products")
   List<Product> all() {
     return repository.findAll();
   }
-
+*/
   @PostMapping("/products")
   Product newProduct(@RequestBody Product newProduct) {
     try {
